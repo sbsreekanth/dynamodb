@@ -14,7 +14,7 @@
     
     $client = DynamoDbClient::factory(array(
         'region' => 'es-east-1',  // replace with your desired region visit http://docs.aws.amazon.com/general/latest/gr/rande.html to get your regions.
-        'version' => '2017-04-08' // Now needs a version
+        'version' => 'latest' // Now needs a version
     ));
     
     $tableNames = array();
