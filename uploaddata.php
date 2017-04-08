@@ -1,7 +1,7 @@
 <?php
 
     // Date now needs to be set, which I guess is a good thing!
-    date_default_timezone_set('Europe/London');
+    date_default_timezone_set('America/New_York');
 
     // Find out what the issues are:
     ini_set('display_errors',1);
@@ -12,8 +12,8 @@
     use Aws\DynamoDb\DynamoDbClient;
 
     $client = DynamoDbClient::factory(array(
-        'region' => 'eu-west-1',  // replace with your desired region
-        'version' => '2012-08-10' // Now needs a version
+        'region' => 'es-east-1',  // replace with your desired region
+        'version' => 'latest' // Now needs a version
     ));
 
     # Setup some local variables for dates
